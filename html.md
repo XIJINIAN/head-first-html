@@ -61,14 +61,14 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
 ```html
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>My test page</title>
-    </head>
-    <body>
-        <p>This is my page</p>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+</head>
+<body>
+<p>This is my page</p>
+</body>
 </html>
 
 <!--
@@ -118,8 +118,8 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
   ```html
   <head>
-      <meta charset="utf-8">
-      <title>&lt;title&gt; element</title>
+    <meta charset="utf-8">
+    <title>&lt;title&gt; element</title>
   </head>
   ```
 
@@ -259,9 +259,9 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
 ```html
 <p>I'm creating a link to
-<a href="https://www.mozilla.org/en-US/"
-   title="The best place to find more information about Mozilla's
-          mission and how to contribute">the Mozilla homepage</a>.
+  <a href="https://www.mozilla.org/en-US/"
+     title="The best place to find more information about Mozilla's
+            mission and how to contribute">the Mozilla homepage</a>.
 </p>
 ```
 
@@ -299,7 +299,7 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&amp;
          subject=The%20subject%20of%20the%20email &amp;
          body=The%20body%20of%20the%20email">
-    Send mail
+  Send mail
 </a>
 ```
 
@@ -313,21 +313,21 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
    ```html
    <p><a href="http://www.example.com/large-report.pdf">
-       Download the sales report (PDF, 10MB)
+     Download the sales report (PDF, 10MB)
    </a></p>
    
    <p><a href="http://www.example.com/video-stream/">
-       Watch the video (stream opens in separate tab, HD quality)
+     Watch the video (stream opens in separate tab, HD quality)
    </a></p>
    
    <p><a href="http://www.example.com/car-game">
-       Play the car game (requires Flash)
+     Play the car game (requires Flash)
    </a></p>
    
    <!-- 在下载链接时使用下载属性 -->
    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
       download="firefox-latest-64bit-installer.exe">
-       Download Latest Firefox for Windows (64-bit) (English, US)
+     Download Latest Firefox for Windows (64-bit) (English, US)
    </a>
    ```
 
@@ -339,14 +339,22 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
 ```html
 <dl>
-    <!-- 请注意：一个术语<dt>可以同时有多个描述<dd> -->
-    <dt>soliloquy</dt>
-    <dd>In drama, where a character speaks to themselves, representing their inner thoughts or feelings and in the process relaying them to the audience (but not to other characters.)</dd>
-    <dt>monologue</dt>
-    <dd>In drama, where a character speaks their thoughts out loud to share them with the audience and any other characters present.</dd>
-    <dt>aside</dt>
-    <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought or piece of additional background information.</dd>
-    <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought or piece of additional background information.</dd>
+  <!-- 请注意：一个术语<dt>可以同时有多个描述<dd> -->
+  <dt>soliloquy</dt>
+  <dd>In drama, where a character speaks to themselves, representing their inner thoughts or
+    feelings and in the process relaying them to the audience (but not to other characters.)
+  </dd>
+  <dt>monologue</dt>
+  <dd>In drama, where a character speaks their thoughts out loud to share them with the audience and
+    any other characters present.
+  </dd>
+  <dt>aside</dt>
+  <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic
+    effect. This is usually a feeling, thought or piece of additional background information.
+  </dd>
+  <dd>In drama, where a character shares a comment only with the audience for humorous or dramatic
+    effect. This is usually a feeling, thought or piece of additional background information.
+  </dd>
 </dl>
 ```
 
@@ -356,30 +364,50 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
   ```html
   <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-      <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+    <p>
+      The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block 
+      Quotation Element</em>) indicates that the enclosed text is an extended quotation.
+    </p>
   </blockquote>
   ```
 
 - 行内引用
 
   ```html
-  <p>The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended for short quotations that don't require paragraph breaks.</q></p>
+  <p>
+    The quote element — <code>&lt;q&gt;</code> — is
+    <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+      intended for short quotations that don't require paragraph breaks.
+    </q>
+  </p>
   ```
 
 - 引文
 
   ```html
-  <p>According to the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-  <cite>MDN blockquote page</cite></a>:
+  <p>According to the
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <cite>MDN blockquote page</cite>
+    </a>:
   </p>
   
   <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-      <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+    <p>
+      The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong>
+      (or <em>HTML Block Quotation Element</em>) indicates that the enclosed 
+      text is an extended quotation.
+    </p>
   </blockquote>
   
-  <p>The quote element — <code>&lt;q&gt;</code> — is <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">intended
-  for short quotations that don't require paragraph breaks.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
-  <cite>MDN q page</cite></a>.</p>
+  <p>The quote element — <code>&lt;q&gt;</code> — is
+    <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+      intended for short quotations that don't require paragraph breaks.
+    </q>
+    --
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+      <cite>MDN q page</cite>
+    </a>.
+  </p>
   
   <!-- 
   总结：blockquote 元素要 cite 属性（默认样式是缩进），
@@ -406,7 +434,7 @@ HTML(HyperText Markup Language) 不是一种编程语言，它是一种标记语
 
   ```html
   <address>
-      <p>Page written by <a href="../authors/chris-mills/">Chris Mills</a>.</p>
+    <p>Page written by <a href="../authors/chris-mills/">Chris Mills</a>.</p>
   </address>
   ```
 
